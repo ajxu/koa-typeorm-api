@@ -1,0 +1,4 @@
+INSERT INTO appdb.companies (uen,name,is_employment_agency,created_at,updated_at,deleted_at) VALUES
+	 ('202100123A','Company A',0,'2021-08-06 10:53:54.259163000','2021-08-06 10:53:54.259163000',NULL),
+	 ('202100456B','Company B',0,'2021-08-06 10:53:54.259163000','2021-08-06 10:53:54.259163000',NULL),
+	 ('202100789C','Company C',1,'2021-08-06 10:53:54.259163000','2021-08-06 10:53:54.259163000',NULL);

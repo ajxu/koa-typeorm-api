@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  mysql-db:
+    container_name: mysql-db
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password --init-file /test/mysql/init.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    ports:
+      - ${DB_PORT}:3306
+    volumes:
+      - ./test/mysql/init.sql:/test/mysql/init.sql
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:

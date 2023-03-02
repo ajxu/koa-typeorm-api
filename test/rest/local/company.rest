@@ -1,0 +1,32 @@
+### Get single record
+GET http://localhost:3000/api/company/202100123A
+Cookie: auth-key=qFbZxcZiV2hXUiVQdG1gnA==
+
+### Get all records
+GET http://localhost:3000/api/company
+Cookie: auth-key=qFbZxcZiV2hXUiVQdG1gnA==
+
+### Create a company
+POST http://localhost:3000/api/company
+content-type: application/json
+Cookie: auth-key=qFbZxcZiV2hXUiVQdG1gnA==
+
+{
+  "uen": "202301234A",
+  "name": "Acme Services Pte. Ltd.",
+  "is_employment_agency": false
+}
+
+### Update a company
+PUT http://localhost:3000/api/company/202101234D
+content-type: application/json
+Cookie: auth-key=qFbZxcZiV2hXUiVQdG1gnA==
+
+{
+  "name": "ABC Services Pte. Ltd.",
+  "is_employment_agency": true
+}
+
+### Delete a company
+DELETE http://localhost:3000/api/company/202101234C
+Cookie: auth-key=qFbZxcZiV2hXUiVQdG1gnA==

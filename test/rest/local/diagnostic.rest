@@ -1,0 +1,15 @@
+### Test sending email
+GET http://localhost:3000/api/diagnostic/test/ping
+Cookie: auth-key=qFbZxcZiV2hXUiVQdG1gnA==
+
+### Test sending email
+POST http://localhost:3000/api/diagnostic/test/email
+content-type: application/json
+
+{
+  "email": "anthony.jr.xu@gmail.com"
+}
+
+### Reset Declarations
+GET http://localhost:3000/api/diagnostic/reset/declarations
+Cookie: auth-key=qFbZxcZiV2hXUiVQdG1gnA==

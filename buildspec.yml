@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo Installing source dependencies ...
+      - npm install
+  build:
+    commands:
+      - echo Building app ...
+      - npm run build
+artifacts:
+  files:
+    - '**/*'

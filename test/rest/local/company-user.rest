@@ -1,0 +1,3 @@
+### get list of users for auth
+GET http://localhost:3000/api/company-user/auth-list
+Cookie: auth-key=qFbZxcZiV2hXUiVQdG1gnA==
